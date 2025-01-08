@@ -14,8 +14,10 @@ https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+ea
 
 **Contenido del repositorio:**
 
-* **`Estimation of obesity levels based on eating... .Rmd`:** Archivo R Markdown que contiene el código y la documentación del análisis.
 * **`Codigo`:** Carpeta que contiene el código en R utilizado para el análisis de datos.
+    * **`Estimation of obesity levels based on eating... .Rmd`:** Archivo R Markdown que contiene el código y la documentación del análisis.
+    * **`header.html`:** Archivo HTML que contiene el encabezado del documento R Markdown.
+    * **`variables.RData`:** Archivo RData que contiene las variables generadas durante el análisis. 
 * **`data`:** Carpeta que contiene los siguientes archivos:
     * **`dataset.csv`:** Conjunto de datos original, cargado directamente desde el archivo CSV proporcionado por la UCI Machine Learning Repository.
     * **`dataset_dirt.csv`:**  Conjunto de datos modificado, al que se le han introducido valores faltantes (`NA`) y celdas vacías ("") para probar las habilidades de imputación.
@@ -25,8 +27,7 @@ https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+ea
 * **`LICENSE`:** Archivo de licencia del repositorio.
 * **`README.md`:**  Este archivo, que contiene una descripción del proyecto y su contenido.
 * **`.gitignore`:** Archivo que especifica los archivos y carpetas que Git debe ignorar.
-* **`header.html`:** Archivo HTML que contiene el encabezado del documento R Markdown.
-* **`variables.RData`:** Archivo RData que contiene las variables generadas durante el análisis.
+
 **Descripción del proyecto:**
 
 El proyecto se centra en el análisis de un conjunto de datos que contiene información sobre los hábitos alimenticios, la condición física y el nivel de obesidad de un grupo de individuos.  El análisis incluye:
