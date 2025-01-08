@@ -9,7 +9,8 @@ Asignatura: M2.851 / Semestre: 2024-1 / Fecha: 7-12-2025
 
 ## Descripción del repositorio proyecto de análisis de obesidad con base en las variables de contexto:
 
-Este repositorio contiene el código y los resultados del proyecto de análisis de obesidad realizado en R. El objetivo principal del proyecto es explorar la relación entre los hábitos alimenticios, la condición física y el nivel de obesidad, utilizando un conjunto de datos de la UCI Machine Learning Repository.
+Este repositorio contiene el código y los resultados del proyecto de análisis de obesidad realizado en R. El objetivo principal del proyecto es explorar la relación entre los hábitos alimenticios, la condición física y el nivel de obesidad, utilizando un conjunto de datos de la UCI Machine Learning Repository:  
+https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition
 
 **Contenido del repositorio:**
 
