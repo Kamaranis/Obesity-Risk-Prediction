@@ -1,70 +1,47 @@
-# Práctica 1 - Tipología y Ciclo de Vida de los Datos
+# Reto 4 | Práctica 2 - Tipología y Ciclo de Vida de los Datos
+**TITULO**  
+*Estimación de niveles de obesidad con base en los hábitos alimenticios y el estado físico*
 
-Asignatura: M2.851 / Semestre: 2024-1 / Fecha: 12-11-2024
-
-[![Current Version](https://img.shields.io/badge/version-1.0-green.svg)](https://github.com/Kamaranis/Web-Scraping-de-videojuegos-con-potencial-de-revalorizacion)
+Asignatura: M2.851 / Semestre: 2024-1 / Fecha: 7-12-2025
 
 ## Autor
   * Anton Barrera Mora - [abarreramora@uoc.edu](abarreramora@uoc.edu)
 
-## Sitio web elegido
-[https://www.pricecharting.com](https://www.pricecharting.com)
+## Descripción del repositorio proyecto de análisis de obesidad con base en las variables de contexto:
 
-## Enlace DOI Zenodo
-El dataset ha sido publicado en Zenodo con DOI [10.5281/zenodo.14043146](https://doi.org/10.5281/zenodo.0000000).
+Este repositorio contiene el código y los resultados del proyecto de análisis de obesidad realizado en R. El objetivo principal del proyecto es explorar la relación entre los hábitos alimenticios, la condición física y el nivel de obesidad, utilizando un conjunto de datos de la UCI Machine Learning Repository.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14043146.svg)](https://doi.org/10.5281/zenodo.14043146)
+**Contenido del repositorio:**
 
-## Descripción del repositorio
+* **`Estimation of obesity levels based on eating... .Rmd`:** Archivo R Markdown que contiene el código y la documentación del análisis.
+* **`Codigo`:** Carpeta que contiene el código en R utilizado para el análisis de datos.
+* **`data`:** Carpeta que contiene los siguientes archivos:
+    * **`dataset.csv`:** Conjunto de datos original, cargado directamente desde el archivo CSV proporcionado por la UCI Machine Learning Repository.
+    * **`dataset_dirt.csv`:**  Conjunto de datos modificado, al que se le han introducido valores faltantes (`NA`) y celdas vacías ("") para probar las habilidades de imputación.
+    * **`dataset_clean.csv`:** Conjunto de datos final, después de la imputación de valores faltantes y la limpieza de datos.
+    * **`paper.pdf`:**  Paper redactado por los autores del conjunto de datos, que recoge detalles de su trabajo, la descripción de las variables y otra información relevante.
+    * **`uci_dataset.zip`:** Archivo comprimido que contiene el conjunto de datos original y la documentación de la UCI Machine Learning Repository.
+* **`LICENSE`:** Archivo de licencia del repositorio.
+* **`README.md`:**  Este archivo, que contiene una descripción del proyecto y su contenido.
+* **`.gitignore`:** Archivo que especifica los archivos y carpetas que Git debe ignorar.
+* **`header.html`:** Archivo HTML que contiene el encabezado del documento R Markdown.
+* **`variables.RData`:** Archivo RData que contiene las variables generadas durante el análisis.
+**Descripción del proyecto:**
 
-Este repositorio contiene un script de Python para realizar web scraping de Pricecharting.com y obtener datos de precios de videojuegos de Xbox One y Xbox Series X.  El script extrae enlaces de videojuegos, descarga precios, genera archivos CSV y crea un dataset con información sobre ID, título, precios (loose, CIB, new) y plataforma.
+El proyecto se centra en el análisis de un conjunto de datos que contiene información sobre los hábitos alimenticios, la condición física y el nivel de obesidad de un grupo de individuos.  El análisis incluye:
 
-Para ejecutar el script, se necesita Python 3.x y las siguientes librerías: requests-html, pandas.  Se recomienda crear un entorno virtual e instalar las dependencias con `pip install -r requirements.txt`.
+* **Limpieza de datos:**  Imputación de valores faltantes y tratamiento de valores atípicos.
+* **Análisis exploratorio:**  Visualización de la distribución de las variables y análisis de la relación entre variables.
+* **Pruebas de hipótesis:**  Aplicación de pruebas estadísticas para comparar grupos y evaluar asociaciones entre variables.
+* **Modelado:**  Construcción de un modelo de regresión ordinal para predecir el nivel de obesidad.
 
-### Estructura
+**Resultados:**
 
-  * `/source/main.py`: Script principal.
-  * `/source/modulos/link_crawler.py`: Módulo para recopilar enlaces de plataformas de videojuegos.
-  * `/souce/modulos/download.py`: Módulo para descargar enlaces de plataformas de videojuegos.
-  * `/souce/modulos/download_pc.py`: Módulo para descargar precios de videojuegos.
-  *  `/souce/modulos/procesar_datos.py`: Módulo para tratar los datos recopilados en diferentes formas.
-  * `/source/requirements.txt`: Lista de paquetes utilizados (Python 3.12.4).
+El análisis ha revelado asociaciones significativas entre el nivel de obesidad y diversas variables, como el consumo de alimentos altos en calorías, el historial familiar de sobrepeso, el tiempo de uso de dispositivos electrónicos y la frecuencia de actividad física.  El modelo de regresión ordinal ha mostrado un buen rendimiento en la predicción del nivel de obesidad.
 
-## Instrucciones
+**Instrucciones:**
+Para replicar el análisis, se puede ejecutar el código en R contenido en el archivo "Estimation of obesity levels based on eating... .Rmd".  El conjunto de datos se encuentra en la carpeta "data". Se adjunta `variables.rdata` por si se considera necesario replicar el entorno
 
-### Instalación
+**Contribuciones:**
 
-Para instalar las dependencias del proyecto, ejecute:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Ejecución
-```
-python main.py
-```
-
-## Tecnologías Utilizadas
-
-- **Python**: Lenguaje de programación principal.
-- **Pandas**: Biblioteca de Python para manipulación y análisis de datos.
-- **requests_html**: Biblioteca de uso simplificado para la realización de *Web Scraping*
-
-## LICENCIA
-
-El código fuente del proyecto se publica bajo la licencia [CC BY-NC-SA 4.0.](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).  
-
-El dataset resultante de este proyecto se publica bajo la licencia **CC0: Public Domain License**.  
-
-## Reconocimientos
-
-**Reconocimiento del origen de los datos y aspectos éticos:**   
- Los datos extraídos provienen de [Pricecharting.com](https://www.pricecharting.com/), un sitio web que ofrece información pública sobre precios de videojuegos.  
- Al liberar el dataset al dominio público, se reconoce que los datos originales no son propiedad del autor de este proyecto.
-
-**Promoción del acceso abierto:**  
-CC0 facilita el acceso y la reutilización de los datos, fomentando la investigación, el análisis y la creación de nuevas aplicaciones.
-
-**Limitación de la extracción de datos:**  
-Como Pricecharting.com ofrece una API premium para acceder a sus datos, se ha limitado la cantidad de información extraída para este proyecto, como muestra de respeto a su modelo de negocio.
+Las contribuciones al proyecto son bienvenidas.  Si encuentras algún error o tienes alguna sugerencia, por favor crea un "issue" o un "pull request" en el repositorio.
