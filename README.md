@@ -1,8 +1,7 @@
-# Reto 4 | Práctica 2 - Tipología y Ciclo de Vida de los Datos
+# Estimación de niveles de obesidad con base en los hábitos alimenticios y el estado físico
+
 **TITULO**  
 *Estimación de niveles de obesidad con base en los hábitos alimenticios y el estado físico*
-
-Asignatura: M2.851 / Semestre: 2024-1 / Fecha: 7-12-2025
 
 ## Autor
   * Anton Barrera Mora - [abarreramora@uoc.edu](abarreramora@uoc.edu)
