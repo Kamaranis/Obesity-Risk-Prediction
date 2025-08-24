@@ -1,4 +1,4 @@
-# Obesity Level Classification
+# Obesity Risk Prediction
 
 ## 📄 Project Overview
 
