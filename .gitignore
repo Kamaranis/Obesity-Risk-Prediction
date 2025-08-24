@@ -29,6 +29,3 @@ __pycache__/
 *.Rproj.user/
 *.Ruserdata
 *.Rproj
-
-# Git
-*.gitignore
