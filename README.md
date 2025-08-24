@@ -1,8 +1,5 @@
 # Estimación de niveles de obesidad con base en los hábitos alimenticios y el estado físico
 
-**TITULO**  
-*Estimación de niveles de obesidad con base en los hábitos alimenticios y el estado físico*
-
 ## Autor
   * Anton Barrera Mora - [abarreramora@uoc.edu](abarreramora@uoc.edu)
 
